@@ -2,6 +2,7 @@ import "./App.css";
 import "@fontsource/open-sans-condensed";
 import HomePage from "./pages/homepage/homepage.component";
 import ShopPage from "./pages/homepage/shop/shop.component";
+import Header from "./components/header/header.component";
 import { Route, Switch } from "react-router-dom";
 
 const HatsPage = () => {
@@ -21,6 +22,7 @@ const WomenPage = () => {
 function App() {
   return (
     <div>
+      <Header />
       <Switch>
         <Route exact path="/" component={HomePage} />
         <Route exact path="/shop" component={ShopPage} />
